@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Resources:
+  ChatgptTelegramBotLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: package//
+      Handler: handler.reply
+      Runtime: python3.10
+      Timeout: 200
+      Environment:
+        Variables:
+          TELEGRAM_TOKEN: <YOUR_TELEGRAM_BOT_TOKEN>
+          OPENAI_API_KEY: <YOUR_OPENAI_API_KEY>
+          DB_ENDPOINT: <YOUR_DB_ENDPOINT>
+          DP_PORT: <YOUR_DB_PORT>
+          DB_NAME: <YOUR_DB_NAME>
+          DB_USER: <YOUR_DB_USER>
+          DB_PASSWORD: <YOUR_DB_PASSWORD>

@@ -1,0 +1,25 @@
+{
+  "body": {
+    "update_id": 196682010,
+    "message": {
+      "message_id": 29,
+      "from": {
+        "id": 5727019618,
+        "is_bot": false,
+        "first_name": "Filip",
+        "last_name": "K",
+        "username": "filknyy",
+        "language_code": "en"
+      },
+      "chat": {
+        "id": 5727019618,
+        "first_name": "Filip",
+        "last_name": "K",
+        "username": "filknyy",
+        "type": "private"
+      },
+      "date": 1686072576,
+      "text": "test"
+    }
+  }
+}
